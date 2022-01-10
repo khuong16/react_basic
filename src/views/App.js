@@ -36,12 +36,15 @@ function App() {
             <Route path="/" exact>
               <Home />
             </Route>
+
             <Route path="/todo">
               <ListToDo />
             </Route>
+
             <Route path="/about">
               <MyComponent />
             </Route>
+
             <Route path="/user" exact>
               <ListUser />
             </Route>

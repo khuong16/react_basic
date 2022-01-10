@@ -10,6 +10,7 @@ class DetailUser extends React.Component {
 
     async componentDidMount() {
         if (this.props.match && this.props.match.params) {
+            // lấy id ở trên params URL, id mình khai báo bên route.
             let id = this.props.match.params.id;
             let res = await axios.get(`https://reqres.in/api/users/${id}`);
 
